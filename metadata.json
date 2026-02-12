@@ -1,0 +1,7 @@
+{
+  "name": "VisionPrompt Analyzer",
+  "description": "An advanced AI-powered tool that analyzes images to extract subjects, context, and design styles, generating optimized prompts for creative workflows.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
