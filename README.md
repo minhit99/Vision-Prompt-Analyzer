@@ -1,83 +1,35 @@
 
-# 👁️ VisionPrompt Analyzer
+# VisionPrompt Analyzer 🔮
 
-**VisionPrompt Analyzer** is an advanced AI-powered tool designed to reverse-engineer the "DNA" of any image. By leveraging the **Google Gemini API**, it decomposes visual inputs into structured prompts (Subject, Style, Environment, Objects) and allows creators to remix, edit, and regenerate new visuals instantly.
+An advanced AI-powered tool that analyzes images to extract subjects, context, and design styles, generating optimized prompts for creative workflows. Powered by Google Gemini 2.5/3.0.
 
-![App Preview](https://via.placeholder.com/1200x600/0f172a/6366f1?text=VisionPrompt+Analyzer+Preview)
-> *Note: Replace the image above with a screenshot of your main interface.*
+![Banner](assets/banner-preview.png)
 
-## ✨ Key Features
+> **Note:** The images in this README are placeholders. Please capture your running app and save screenshots to an `assets` folder in the root directory.
 
-### 1. 🧠 AI-Powered Visual Analysis
-Uses **Gemini 3 Flash** to deeply analyze images and extract:
-*   **Subject DNA:** Identifies the main character or focal point.
-*   **Style & Medium:** Detects art styles (e.g., Oil Painting, Cyberpunk, 35mm Photography).
-*   **Context/Environment:** Describes the background, lighting, and atmosphere.
-*   **Color Mapping:** Extracts an exact hex color palette.
-*   **Typography:** Detects text elements, fonts, and their locations.
+## ✨ Features
 
-### 2. ⚡ Batch Processing & Queue System
-Support for high-volume workflows.
-*   **Multi-Upload:** Drag and drop multiple images at once.
-*   **Queue Management:** Images are processed sequentially to respect API rate limits.
-*   **History Bar:** A visual gallery of previous analyses allows you to switch between results instantly.
-
-### 3. 🧬 Prompt DNA Lab
-A granular editor for the generated prompt.
-*   **Toggle Control:** Enable or disable specific parts of the prompt (e.g., keep the subject but remove the background).
-*   **Auto-Sync:** Changes in the text fields automatically update the "Master Synthesis Prompt".
-*   **Typography Matrix:** Specific controls for text elements found in the image.
-
-### 4. 🎨 Creative Synthesis & Generation
-Re-imagine your image using **Gemini 2.5 Flash Image**.
-*   **Style Overrides:** Apply presets like *Cinematic, Anime, Minimalist, or Neon*.
-*   **Lens Optics:** Simulate camera lenses (35mm, 85mm, Fisheye, Macro).
-*   **Aspect Ratio Control:** Switch between Square (1:1), Landscape (16:9), and Portrait (9:16).
-*   **Visualization:** Generate small previews of individual objects or the full composition.
-
-### 5. 🌍 Multi-Language Support
-Full UI localization support for:
-*   🇬🇧 English
-*   🇻🇳 Vietnamese
-*   🇨🇳 Chinese (Simplified)
-*   🇯🇵 Japanese
-*   🇹🇭 Thai
-
----
+*   **🧬 Visual DNA Analysis**: Deconstructs images into Subject, Style, Environment, Typography, and Objects using Gemini Vision models.
+*   **🚀 Batch Queue System**: Drag & drop multiple images. The app processes them sequentially without freezing the UI.
+*   **📜 Session History**: A visual history bar allows you to switch between analyzed results instantly.
+*   **🎨 Creative Configuration**: 
+    *   **Style Overrides**: Apply presets like Cinematic, Anime, Cyberpunk, Watercolor.
+    *   **Lens Optics**: Simulate 35mm, 85mm, Macro, and Fisheye lenses.
+    *   **Auto-Sync**: Modifications to individual components automatically update the Master Synthesis Prompt.
+*   **🌍 Multi-language Support**: Full UI and Analysis support for English, Vietnamese, Chinese, Japanese, and Thai.
+*   **⚡ Real-time Visualization**: Generate preview images of specific objects or the full prompt directly within the app.
 
 ## 📸 Screenshots
 
-| Upload & Queue | Analysis Results |
+| Upload & Queue Interface | Analysis DNA Lab |
 |:---:|:---:|
-| ![Upload Interface](https://via.placeholder.com/600x400/1e293b/94a3b8?text=Upload+Queue) | ![Analysis Result](https://via.placeholder.com/600x400/1e293b/94a3b8?text=DNA+Lab+Result) |
-| *Batch upload interface with queue status* | *Detailed breakdown of image components* |
+| ![Queue UI](assets/queue-ui.png) | ![Analysis Result](assets/analysis-result.png) |
 
-| Creative Config | History Gallery |
+| Creative Config | Mobile View |
 |:---:|:---:|
-| ![Creative Tools](https://via.placeholder.com/600x400/1e293b/94a3b8?text=Creative+Config) | ![History Bar](https://via.placeholder.com/600x400/1e293b/94a3b8?text=History+Gallery) |
-| *Style overrides and lens settings* | *Session history with thumbnail navigation* |
+| ![Creative Tools](assets/creative-tools.png) | ![Mobile View](assets/mobile-view.png) |
 
----
-
-## 🛠️ Tech Stack
-
-*   **Frontend:** React 19, TypeScript, Vite (assumed)
-*   **Styling:** Tailwind CSS (Dark Mode / Glassmorphism UI)
-*   **AI Core:** Google Gemini API (`@google/genai` SDK)
-    *   Analysis: `gemini-3-flash-preview`
-    *   Generation: `gemini-2.5-flash-image`
-*   **Icons:** FontAwesome 6
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-*   Node.js (v18 or higher)
-*   A Google Gemini API Key (Get one at [aistudio.google.com](https://aistudio.google.com/))
-
-### Installation
+## 🛠️ Setup & Installation
 
 1.  **Clone the repository**
     ```bash
@@ -85,38 +37,39 @@ Full UI localization support for:
     cd visionprompt-analyzer
     ```
 
-2.  **Install dependencies**
+2.  **Install Dependencies**
     ```bash
     npm install
     ```
 
-3.  **Configure Environment**
-    Create a `.env` file in the root directory and add your API key:
+3.  **Configure API Key**
+    *   Get your API key from [Google AI Studio](https://aistudio.google.com/).
+    *   Create a `.env` file in the root directory:
     ```env
-    API_KEY=your_google_gemini_api_key_here
+    API_KEY=your_gemini_api_key_here
     ```
-    *(Note: The app is configured to read `process.env.API_KEY`. Ensure your bundler supports this).*
+    *(Note: The current build uses `process.env.API_KEY` injected via bundler or environment)*.
 
-4.  **Run the App**
+4.  **Run the Application**
     ```bash
     npm start
-    # or
-    npm run dev
     ```
 
----
+## 🏗️ Tech Stack
 
-## 📖 Usage Guide
+*   **Framework**: React 19 + TypeScript
+*   **Styling**: Tailwind CSS
+*   **AI Model**: Google Gemini (`gemini-3-flash-preview` for analysis, `gemini-2.5-flash-image` for generation)
+*   **State Management**: React Hooks (Context API for i18n)
 
-1.  **Upload:** Drag and drop one or more images into the drop zone.
-2.  **Analyze:** Click "Analyze Queue". The app will process images one by one.
-3.  **Review DNA:** Scroll down to the "Prompt DNA Lab". Review the Subject, Style, and Context.
-4.  **Edit:** Uncheck boxes to remove elements or edit the text fields directly.
-5.  **Configure:** Use the "Creative Configuration" section to add a "Cyberpunk" filter or a "Fisheye" lens effect.
-6.  **Generate:** Click **Visualize Result** to generate a new image based on your modified prompt.
+## 📝 Usage Guide
 
----
+1.  **Upload**: Drag and drop one or more images into the drop zone.
+2.  **Analyze**: Click "Analyze Queue". The AI will reverse-engineer the image prompts.
+3.  **Edit**: Use the "DNA Lab" to toggle specific elements (Subject, Style, Context) on or off.
+4.  **Refine**: Scroll down to "Creative Configuration" to add artistic filters or change aspect ratios.
+5.  **Generate**: Click "Visualize Result" to see the AI's interpretation of your optimized prompt.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+MIT License.
