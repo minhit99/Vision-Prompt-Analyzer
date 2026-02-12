@@ -31,8 +31,8 @@ An advanced AI-powered tool that analyzes images to extract subjects, context, a
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/visionprompt-analyzer.git
-    cd visionprompt-analyzer
+    git clone https://github.com/minhit99/Vision-Prompt-Analyzer.git
+    cd Vision-Prompt-Analyzer
     ```
 
 2.  **Install Dependencies**
