@@ -3,7 +3,7 @@
 
 An advanced AI-powered tool that analyzes images to extract subjects, context, and design styles, generating optimized prompts for creative workflows. Powered by Google Gemini 2.5/3.0.
 
-[![Open in Google AI Studio](https://img.shields.io/badge/Open%20in-Google%20AI%20Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com/)
+[![Open in Google AI Studio](https://img.shields.io/badge/Open%20in-Google%20AI%20Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.studio/apps/drive/1GUSmfHvw9UTaA425wBg8Wc9AfqrcdoF4)
 
 ![Banner](assets/banner-preview.svg)
 
