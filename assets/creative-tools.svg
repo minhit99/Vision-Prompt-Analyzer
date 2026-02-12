@@ -1,0 +1,40 @@
+
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#0f172a" />
+  
+  <text x="40" y="40" font-family="Arial" font-size="14" fill="#94a3b8" font-weight="bold">CREATIVE CONFIGURATION</text>
+  
+  <!-- Controls -->
+  <g transform="translate(40, 70)">
+    <rect width="250" height="60" rx="10" fill="#1e293b" />
+    <text x="15" y="25" font-family="Arial" font-size="10" fill="#64748b">STYLE OVERRIDE</text>
+    <rect x="15" y="35" width="220" height="10" fill="#0f172a" rx="5" />
+    <rect x="15" y="35" width="40" height="10" fill="#6366f1" rx="5" />
+  </g>
+
+  <g transform="translate(310, 70)">
+    <rect width="250" height="60" rx="10" fill="#1e293b" />
+    <text x="15" y="25" font-family="Arial" font-size="10" fill="#64748b">LENS OPTIC</text>
+    <rect x="15" y="35" width="220" height="10" fill="#0f172a" rx="5" />
+    <rect x="15" y="35" width="80" height="10" fill="#a855f7" rx="5" />
+  </g>
+
+  <!-- Aspect Ratios -->
+  <g transform="translate(40, 150)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#94a3b8">ASPECT RATIO</text>
+    <rect x="0" y="15" width="40" height="40" fill="#6366f1" rx="5" /> <!-- 1:1 -->
+    <rect x="50" y="15" width="60" height="40" fill="#1e293b" stroke="#334155" rx="5" /> <!-- 4:3 -->
+    <rect x="120" y="15" width="70" height="40" fill="#1e293b" stroke="#334155" rx="5" /> <!-- 16:9 -->
+    <text x="10" y="38" font-family="Arial" font-size="10" fill="white">1:1</text>
+  </g>
+
+  <!-- Generate Button -->
+  <rect x="310" y="165" width="250" height="50" rx="25" fill="url(#gradBtn)" />
+  <defs>
+    <linearGradient id="gradBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1" />
+      <stop offset="100%" style="stop-color:#a855f7" />
+    </linearGradient>
+  </defs>
+  <text x="435" y="195" font-family="Arial" font-size="14" fill="white" font-weight="bold" text-anchor="middle">VISUALIZE RESULT</text>
+</svg>

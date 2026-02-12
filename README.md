@@ -3,9 +3,7 @@
 
 An advanced AI-powered tool that analyzes images to extract subjects, context, and design styles, generating optimized prompts for creative workflows. Powered by Google Gemini 2.5/3.0.
 
-![Banner](assets/banner-preview.png)
-
-> **Note:** The images in this README are placeholders. Please capture your running app and save screenshots to an `assets` folder in the root directory.
+![Banner](assets/banner-preview.svg)
 
 ## ✨ Features
 
@@ -19,15 +17,15 @@ An advanced AI-powered tool that analyzes images to extract subjects, context, a
 *   **🌍 Multi-language Support**: Full UI and Analysis support for English, Vietnamese, Chinese, Japanese, and Thai.
 *   **⚡ Real-time Visualization**: Generate preview images of specific objects or the full prompt directly within the app.
 
-## 📸 Screenshots
+## 📸 Mockups
 
 | Upload & Queue Interface | Analysis DNA Lab |
 |:---:|:---:|
-| ![Queue UI](assets/queue-ui.png) | ![Analysis Result](assets/analysis-result.png) |
+| ![Queue UI](assets/queue-ui.svg) | ![Analysis Result](assets/analysis-result.svg) |
 
 | Creative Config | Mobile View |
 |:---:|:---:|
-| ![Creative Tools](assets/creative-tools.png) | ![Mobile View](assets/mobile-view.png) |
+| ![Creative Tools](assets/creative-tools.svg) | ![Mobile View](assets/mobile-view.svg) |
 
 ## 🛠️ Setup & Installation
 

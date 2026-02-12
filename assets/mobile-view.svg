@@ -1,0 +1,21 @@
+
+<svg width="300" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="500" rx="30" fill="#0f172a" stroke="#334155" stroke-width="10" />
+  
+  <!-- Notch -->
+  <path d="M100 0 L200 0 L180 20 L120 20 Z" fill="#334155" />
+  
+  <!-- App Content -->
+  <text x="150" y="60" font-family="Arial" font-size="20" fill="white" text-anchor="middle" font-weight="bold">VisionPrompt</text>
+  
+  <!-- Image Preview -->
+  <rect x="30" y="80" width="240" height="150" rx="15" fill="#1e293b" stroke="#334155" />
+  <circle cx="150" cy="155" r="20" fill="#334155" />
+  
+  <!-- Controls -->
+  <rect x="30" y="250" width="240" height="60" rx="10" fill="#1e293b" />
+  <rect x="30" y="320" width="240" height="60" rx="10" fill="#1e293b" />
+  
+  <!-- Button -->
+  <rect x="30" y="420" width="240" height="40" rx="20" fill="#6366f1" />
+</svg>
